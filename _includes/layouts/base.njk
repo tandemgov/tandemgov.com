@@ -1,5 +1,10 @@
 ---
+site: TandemGov
 title: TandemGov
+date: Last Modified
+HTTP_HOST: https://tandemgov.com
+preview_image: "/assets/src/images/TandemGov-Preview.png"
+search_description: TandemGov helps organizations navigate government contracting while playing to your strengths.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +12,30 @@ title: TandemGov
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | TandemGov</title>
+    <title>{% if seo_title %}{{ seo_title }}{% else %}{{ title }} | {{ site }}{% endif %}</title>
+
+    <meta name="og:title" content="{% if seo_title %}{{ seo_title }}{% else %}{{ title }} | {{ site }}{% endif %}">
+    <meta property="og:title" content="{% if seo_title %}{{ seo_title }}{% else %}{{ title }} | {{ site }}{% endif %}">
+
+    <meta name="description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
+    <meta name="og:description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
+    <meta property="og:description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
+    <meta itemprop="description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
+
+    <meta name="og:image" content="{{ HTTP_HOST }}{{ preview_image }}">
+    <meta property="og:image" content="{{ HTTP_HOST }}{{ preview_image }}">
+    <meta name="og:image:width" content="600">
+    <meta name="og:image:height" content="335">
+    <meta name="twitter:image" content="{{ HTTP_HOST }}{{ preview_image }}">
+    <meta name="twitter:card" content="summary_large_image">
+    {# <meta name="og:site_name" content="{% with page.get_site.site_name as site_name %}{% if site_name %}- {{ site_name }}{% endif %}{% endwith %}"> #}
+    <meta name="og:type" content="website">
+    <meta property="og:type" content="website">
+    <meta name="og:url" content="{{ HTTP_HOST }}{{ permalink }}">
+    <meta property="og:url" content="{{ HTTP_HOST }}{{ permalink }}">
+    <meta name="og:pubdate" content="{{ page.date.toUTCString() }}">
+    <meta property="og:pubdate" content="{{ page.date.toUTCString() }}">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">

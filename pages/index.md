@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: TandemGov – Good government, better partnerships
+seo_title: TandemGov – Good government, better partnerships
 permalink: /
 slug: home
 sectionColor: blue
