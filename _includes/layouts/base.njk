@@ -2,8 +2,6 @@
 site: TandemGov
 title: TandemGov
 date: Last Modified
-#HTTP_HOST: https://tandemgov.com
-HTTP_HOST: 
 preview_image: "/assets/images/TandemGov-Preview.png"
 search_description: TandemGov helps organizations navigate government contracting while playing to your strengths.
 ---
@@ -23,17 +21,17 @@ search_description: TandemGov helps organizations navigate government contractin
     <meta property="og:description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
     <meta itemprop="description" content="{% if search_description %}{{ search_description }}{% else %}{{ title }} | {{ site }}{% endif %}">
 
-    <meta name="og:image" content="{{ HTTP_HOST }}{{ preview_image }}">
-    <meta property="og:image" content="{{ HTTP_HOST }}{{ preview_image }}">
+    <meta name="og:image" content="{{ tandemgov.HTTP_HOST }}{{ preview_image }}">
+    <meta property="og:image" content="{{ tandemgov.HTTP_HOST }}{{ preview_image }}">
     <meta name="og:image:width" content="1200">
     <meta name="og:image:height" content="630">
-    <meta name="twitter:image" content="{{ HTTP_HOST }}{{ preview_image }}">
+    <meta name="twitter:image" content="{{ tandemgov.HTTP_HOST }}{{ preview_image }}">
     <meta name="twitter:card" content="summary_large_image">
     {# <meta name="og:site_name" content="{% with page.get_site.site_name as site_name %}{% if site_name %}- {{ site_name }}{% endif %}{% endwith %}"> #}
     <meta name="og:type" content="website">
     <meta property="og:type" content="website">
-    <meta name="og:url" content="{{ HTTP_HOST }}{{ permalink }}">
-    <meta property="og:url" content="{{ HTTP_HOST }}{{ permalink }}">
+    <meta name="og:url" content="{{ tandemgov.HTTP_HOST }}{{ permalink }}">
+    <meta property="og:url" content="{{ tandemgov.HTTP_HOST }}{{ permalink }}">
     <meta name="og:pubdate" content="{{ page.date.toUTCString() }}">
     <meta property="og:pubdate" content="{{ page.date.toUTCString() }}">
 
