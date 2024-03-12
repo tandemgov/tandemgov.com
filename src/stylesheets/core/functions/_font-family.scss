@@ -1,0 +1,23 @@
+// Set font family
+// 
+// @group Typography
+// @param {String} $font - Font family
+// 
+// @example scss 
+//   .foo {
+//       font-family: font('wide');
+//   }
+
+@use "../vars" as *;
+
+@function font($font) {
+
+  @if not map-has-key($fonts, $font) {
+    @error '`#{$font}` is not a valid font family. '
+      + 'Font family tokens: '
+      + '#{map-keys($fonts)}';
+  }
+
+  $val: unquote(map-get($fonts, $font));
+  @return $val;
+}

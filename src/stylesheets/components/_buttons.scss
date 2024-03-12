@@ -1,0 +1,204 @@
+@use "../core" as *;
+@forward "icons";
+
+// Default buttons
+button {
+  cursor: pointer;
+}
+
+.button,
+.button:link,
+.button:visited {
+  @include font-size($button-font-size);
+  align-items: center;
+  appearance: none;
+  background-color: color($button-background-color);
+  border: units($button-border-width) solid color($button-border-color);
+  border-radius: radius($button-border-radius);
+  color: color($button-label-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: weight($button-label-weight);
+  justify-content: center;
+  padding: units($button-padding-y) units($button-padding-x);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  > * {
+    line-height: inherit;
+  }
+}
+
+.button:hover {
+  background-color: color($button-background-color-hover);
+  border-color: color($button-border-color-hover);
+  color: color($button-label-color-hover);
+}
+
+.button:active {
+  background-color: color($button-background-color-active);
+  border-color: color($button-border-color-active);
+  color: color($button-label-color-active);
+}
+
+.button__icon {
+  height: .65em;
+  width: .65em;
+}
+
+.button--icon-r svg {
+  margin-left: .5em;
+}
+
+.button--icon-l svg {
+  margin-right: .5em;
+}
+
+// Primary action buttons
+.button--primary,
+.button--primary:link,
+.button--primary:visited {
+  background-color: color($button-primary-background-color);
+  border-color: color($button-primary-border-color);
+  color: color($button-primary-label-color);
+}
+
+.button--primary:hover {
+  background-color: color($button-primary-background-color-hover);
+  border-color: color($button-primary-border-color-hover);
+  color: color($button-primary-label-color-hover);
+}
+
+.button--primary:active {
+  background-color: color($button-primary-background-color-active);
+  border-color: color($button-primary-border-color-active);
+  color: color($button-primary-label-color-active);
+}
+
+// Special buttons
+.button--special,
+.button--special:link,
+.button--special:visited {
+  background-color: color($button-special-background-color);
+  border-color: color($button-special-border-color);
+  color: color($button-special-label-color);
+}
+
+.button--special:hover {
+  background-color: color($button-special-background-color-hover);
+  border-color: color($button-special-border-color-hover);
+  color: color($button-special-label-color-hover);
+}
+
+.button--special:active {
+  background-color: color($button-special-background-color-active);
+  border-color: color($button-special-border-color-active);
+  color: color($button-special-label-color-active);
+}
+
+// External buttons
+.button--external,
+.button--external:link,
+.button--external:visited {
+  background-color: color($button-external-background-color);
+  border-color: color($button-external-border-color);
+  color: color($button-external-label-color);
+}
+
+.button--external:hover {
+  background-color: color($button-external-background-color-hover);
+  border-color: color($button-external-border-color-hover);
+  color: color($button-external-label-color-hover);
+}
+
+.button--external:active {
+  background-color: color($button-external-background-color-active);
+  border-color: color($button-external-border-color-active);
+  color: color($button-external-label-color-active);
+}
+
+// Danger buttons
+.button--danger,
+.button--danger:link,
+.button--danger:visited {
+  background-color: color($button-danger-background-color);
+  border-color: color($button-danger-border-color);
+  color: color($button-danger-label-color);
+}
+
+.button--danger:hover {
+  background-color: color($button-danger-background-color-hover);
+  border-color: color($button-danger-border-color-hover);
+  color: color($button-danger-label-color-hover);
+}
+
+.button--danger:active {
+  background-color: color($button-danger-background-color-active);
+  border-color: color($button-danger-border-color-active);
+  color: color($button-danger-label-color-active);
+}
+
+// Big buttons
+.button--big,
+.button--big:link,
+.button--big:visited {
+  @include font-size($button-big-font-size);
+  padding: units($button-big-padding-y) units($button-big-padding-x);
+}
+
+// Small buttons
+.button--small,
+.button--small:link,
+.button--small:visited {
+  @include font-size($button-small-font-size);
+  padding: units($button-small-padding-y) units($button-small-padding-x) 0;
+}
+
+// Disabled buttons
+.button:disabled {
+  background-color: color($button-background-color-disabled);
+  border-color: color($button-border-color-disabled);
+  color: color($button-label-color-disabled);
+  cursor: default;
+  pointer-events: none;
+}
+
+.button--unstyled,
+.button--unstyled:link,
+.button--unstyled:visited {
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.button-group {
+  display: flex;
+  .button {
+    height: 33px;
+    margin-left: 5px;
+  }
+}
+
+.button {
+  .icon-toggle {
+      margin: 0 5px;
+  }
+}
+
+.button {
+  span {
+    .sr {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: contents;
+      }
+    }
+  }
+}
+
+.usa-nav__link, .usa-nav-link {
+  font-size: initial;
+}

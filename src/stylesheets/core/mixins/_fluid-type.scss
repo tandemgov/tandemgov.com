@@ -1,0 +1,51 @@
+//
+// Interpolates min and max value
+// @group Typography
+//
+// @param {String} $properties - CSS property to use the calc function
+// @param {String} $min-screen - Smallest screen width
+// @param {String} $max-screen - Largest screen width
+// @param {String} $min-value - Minimum value of CSS property
+// @param {String} $max-value - Maximum value of CSS property
+//
+@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-value;
+    }
+
+    @media screen and (min-width: $min-screen) {
+      @each $property in $properties {
+        #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value);
+      }
+    }
+
+    @media screen and (min-width: $max-screen) {
+      @each $property in $properties {
+        #{$property}: $max-value;
+      }
+    }
+  }
+}
+
+//
+// Creates the `calc` property
+//
+// @param {String} $min-screen 
+// @param {String} $max-screen 
+// @param {String} $min-value 
+// @param {String} $max-value
+//
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
+  $a: calc(($max-value - $min-value) / ($max-screen - $min-screen));
+  $b: $min-value - $a * $min-screen;
+
+  $sign: "+";
+
+  @if ($b < 0) {
+    $sign: "-";
+    $b: abs($b);
+  }
+
+  @return calc(#{$a*100}vw #{$sign} #{$b});
+}

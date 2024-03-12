@@ -1,0 +1,21 @@
+// Z-index function for setting leadings
+// 
+// @group Typography
+// @param {String} $z-index - Uses the $z-index token
+// 
+// @example scss 
+//   .foo {
+//       z-index: z-index('flyout-menu');
+//   }
+//
+@function z-index($z-index) {
+
+  @if not map-has-key($z-indexes, $z-index) {
+    @error '`#{$z-index}` is not a valid z-index token. '
+      + 'Valid z-index tokens: '
+      + '#{map-keys($z-indexes)}';
+  }
+
+  $val: map-get($z-indexes, $z-index);
+  @return $val;
+}

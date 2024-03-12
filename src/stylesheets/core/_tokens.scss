@@ -1,0 +1,234 @@
+/*
+----------------------------------------
+GENERAL SETTINGS
+----------------------------------------
+*/
+
+// General Typography
+$body-background-color: "white";
+$body-font: "narrow";
+$body-font-weight: "light";
+$base-font-color: "gray-14";
+$base-font-color-light: "gray-7";
+$base-line-height: "5";
+
+// Links
+$link-color: "blue-5";
+$link-underline-color: "blue-3";
+$link-underline-thickness: .125em;
+
+// Visited links
+$link-color-visited: "blue-7";
+$link-underline-color-visited: "blue-7";
+
+// Hover links
+$link-color-hover: "blue-5";
+$link-underline-color-hover: "blue-3";
+$link-decoration-line-hover: underline;
+
+// Headings
+$heading-font: "narrow";
+$heading-font-weight: "medium";
+$heading-line-height: "2";
+
+// Layout
+// $site-max-width: 120rem;
+$site-wrap-padding-sm: "2.5";
+$site-wrap-padding-lg: "5";
+$flex-column-gap: "3";
+$grid-column-gap: "6";
+
+// Footer
+$footer-background-color: "blue-1";
+$footer-text-color: "white";
+$footer-link-color: "white";
+$footer-link-underline-color: "white";
+$footer-link-underline-thickness: 1px;
+$footer-link-decoration-line-hover: none;
+$footer-padding-y: "4";
+$footer-height: 5.5rem;
+$footer-font-size: 1.4rem;
+$footer-font-weight: "medium";
+
+
+// Header
+$header-padding-y: "2";
+
+// Navigation
+$navigation-link-color: "gray-14";
+$navigation-link-weight: "regular";
+$navigation-margin-x: "2";
+$navigation-padding-x: "0.5";
+$navigation-padding-y: "1px";
+
+/*
+----------------------------------------
+COLORS
+----------------------------------------
+*/
+
+// Accent
+$highlight-color: "yellow";
+
+// Success
+$success-color: "green-5";
+
+// Error
+$error-color: "red-5";
+
+// Danger
+$danger-color: "red-7";
+$danger-color-dark: "red-9";
+$danger-color-light: "red-3";
+$danger-color-lightest: "red-1";
+
+/*
+----------------------------------------
+Accessibility
+----------------------------------------
+*/
+$focus-color: "yellow";
+$focus-offset: "0";
+$focus-style: solid;
+$focus-width: "0.5";
+
+
+/*
+----------------------------------------
+Buttons
+----------------------------------------
+*/
+
+// Default button
+$button-background-color: "gray-1";
+$button-border-color: "gray-2";
+$button-border-radius: "md";
+$button-border-width: "1px";
+$button-font-size: "small";
+$button-label-color: "gray-14";
+$button-label-weight: "medium";
+$button-padding-x: "1.5";
+$button-padding-y: "0.5";
+
+$button-background-color-hover: "gray-2";
+$button-border-color-hover: "gray-2";
+$button-label-color-hover: "gray-14";
+
+$button-background-color-active: "gray-5";
+$button-border-color-active: "gray-2";
+$button-label-color-active: "white";
+
+// Primary action buttons
+$button-primary-background-color: "blue-5";
+$button-primary-border-color: "blue-5";
+$button-primary-label-color: "white";
+
+$button-primary-background-color-hover: "blue-7";
+$button-primary-border-color-hover: "blue-7";
+$button-primary-label-color-hover: "white";
+
+$button-primary-background-color-active: "blue-7";
+$button-primary-border-color-active: "blue-7";
+$button-primary-label-color-active: "white";
+
+// Danger buttons
+$button-danger-background-color: $danger-color;
+$button-danger-border-color: $danger-color;
+$button-danger-label-color: "white";
+
+$button-danger-background-color-hover: $danger-color-dark;
+$button-danger-border-color-hover: $danger-color-dark;
+$button-danger-label-color-hover: "white";
+
+$button-danger-background-color-active: $danger-color-dark;
+$button-danger-border-color-active: $danger-color-dark;
+$button-danger-label-color-active: "white";
+
+// Special buttons
+$button-special-background-color: "green-5";
+$button-special-border-color: "green-5";
+$button-special-label-color: "white";
+
+$button-special-background-color-hover: "green-3";
+$button-special-border-color-hover: "green-3";
+$button-special-label-color-hover: "white";
+
+$button-special-background-color-active: "green-3";
+$button-special-border-color-active: "green-3";
+$button-special-label-color-active: "white";
+
+// External buttons
+$button-external-background-color: "blue-9";
+$button-external-border-color: "blue-9";
+$button-external-label-color: "white";
+
+$button-external-background-color-hover: "blue-7";
+$button-external-border-color-hover: "blue-1";
+$button-external-label-color-hover: "white";
+
+$button-external-background-color-active: "blue-7";
+$button-external-border-color-active: "blue-1";
+$button-external-label-color-active: "white";
+
+// Small buttons
+$button-small-font-size: "small";
+$button-small-padding-x: "1.5";
+$button-small-padding-y: "0.25";
+
+// Big buttons
+$button-big-font-size: "h5";
+$button-big-padding-x: "4";
+$button-big-padding-y: "1";
+
+// Disabled buttons
+$button-background-color-disabled: "gray-5";
+$button-border-color-disabled: "gray-5";
+$button-label-color-disabled: "white";
+
+/*
+----------------------------------------
+Banners
+----------------------------------------
+*/
+$banner-background-color: "blue-5";
+$banner-font-size: "base";
+$banner-text-color: "white";
+$banner-padding-y: "2";
+$banner-text-align: center;
+
+/*
+----------------------------------------
+Hero
+----------------------------------------
+*/
+$hero-background-color: "white";
+$hero-heading-font-size: "h1";
+$hero-heading-font-color: $base-font-color;
+$hero-lead-text-font-size: "h4";
+$hero-lead-text-font-color: $base-font-color-light;
+
+/*
+----------------------------------------
+Skipnav
+----------------------------------------
+*/
+$skipnav-background-color: "white";
+$skipnav-font-size: "small";
+$skipnav-font-color: $base-font-color;
+
+/*
+----------------------------------------
+Forms
+----------------------------------------
+*/
+$field-border-width: 1px;
+$field-border-color: "gray-3";
+$field-padding-y: "1";
+$field-padding-x: "2";
+$field-label-color: $base-font-color;
+$label-font-weight: "regular";
+$legend-font-size: "h4";
+$legend-font-color: $base-font-color;
+$legend-font-weight: "bold";
+$legend-font-family: $heading-font;
+

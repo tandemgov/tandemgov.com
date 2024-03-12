@@ -1,0 +1,47 @@
+@use "../vars" as *;
+
+// Spacing units in multiples of 8 using rems mostly used in padding and margins
+// @param {String} $unit - Spacing unit
+// @group Layout
+// 
+// @example scss 
+//   .foo {
+//       padding: units('3');
+//   }
+//
+// @return {String}
+//
+@function units($unit) {
+
+  @if not map-has-key($units, $unit) {
+    @error '`#{$unit}` is not a valid spacing unit token. '
+      + 'Valid spacing unit tokens: '
+      + '#{map-keys($units)}';
+  }
+
+  $val: map-get($units, $unit);
+  @return $val + rem;
+}
+
+// Spacing units in multiples of 8 using px mostly used in padding and margins
+// @param {String} $unit - Spacing unit
+// 
+// @group Layout
+// @example scss 
+//   .foo {
+//       padding: units('3');
+//   }
+//
+// @return {String}
+//
+@function units-px($unit) {
+
+  @if not map-has-key($units, $unit) {
+    @error '`#{$unit}` is not a valid spacing unit token. '
+      + 'Valid spacing unit tokens: '
+      + '#{map-keys($units)}';
+  }
+
+  $val: map-get($units, $unit);
+  @return ($val * 10) + px;
+}

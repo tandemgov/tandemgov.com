@@ -1,0 +1,31 @@
+//
+// Style for focus state
+//
+// @param {String} $width [$focus-width] - Element's `outline-width`
+// @param {String} $style [$focus-style] Element's `outline-style`
+// @param {String} $color [$focus-color] Element's `outline-color`
+// @param {String} $offset [$focus-offset] Element's `outline-offset`
+//
+// @example scss 
+//   button {
+//       @include focus-outline();
+//   }
+//
+// @example scss 
+//   button {
+//       @include focus-outline(null, null, null, '1');
+//   }
+//
+@mixin focus-outline(
+  $width: $focus-width,
+  $style: $focus-style,
+  $color: $focus-color,
+  $offset: $focus-offset
+) {
+  $width: if($width == null, $focus-width, $width);
+  $style: if($style == null, $focus-style, $style);
+  $color: if($color == null, $focus-color, $color);
+  $offset: if($offset == null, $focus-offset, $offset);
+  outline: units($width) $style color($color);
+  outline-offset: units($offset);
+}

@@ -1,0 +1,21 @@
+// Measure function for controlling the line length
+// 
+// @group Typography
+// @param {String} $measure - Uses the $measures token
+// 
+// @example scss 
+//   .foo {
+//       max-width: measure('1');
+//   }
+//
+@function measure($measure) {
+
+  @if not map-has-key($measures, $measure) {
+    @error '`#{$measure}` is not a valid measure token. '
+      + 'Valid measure tokens: '
+      + '#{map-keys($measures)}';
+  }
+
+  $val: map-get($measures, $measure);
+  @return $val;
+}

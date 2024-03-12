@@ -1,0 +1,279 @@
+/* stylelint-disable number-leading-zero */
+
+/*
+===========================================
+Paths
+===========================================
+*/
+$base-path: '/assets' !default;
+
+/*
+===========================================
+Breakpoints
+===========================================
+*/
+// @group Design tokens
+$breakpoints: (
+  'phone': 320px,
+  'phone-lg': 480px,
+  'tablet-sm': 600px,
+  'tablet': 768px,
+  'nav-width': 877px,
+  'desktop': 1024px,
+  'desktop-lg': 1300px,
+  'desktop-xl': 1500px
+);
+
+/*
+===========================================
+Grid
+===========================================
+*/
+// Total columns
+// @group Layout
+$grid-columns: 12 !default;
+
+
+/*
+===========================================
+Type
+Two font sizes given for responsive type settings
+in _fluidtype.scss mixin.
+===========================================
+*/
+$fluid_min: 20rem;
+// $fluid_max: 136.6rem;
+$fluid_max: 100rem;
+
+// Min font sizes
+$base_sm: 1.4rem;
+$h1_sm: 3rem;
+$h2_sm: 2.65rem;
+$h3_sm: 2.15rem;
+$h4_sm: 1.8rem;
+$h5_sm: 1.6rem;
+$h6_sm: 1.4rem;
+$small_sm: 1.28rem;
+$tiny_sm: 1.12rem;
+
+// Max font sizes
+$base_lg: 1.8rem;
+$h1_lg: 4rem;
+$h2_lg: 3.5rem;
+$h3_lg: 3rem;
+$h4_lg: 2.5rem;
+$h5_lg: 2.25rem;
+$h6_lg: 1.8rem;
+$small_lg: 1.6rem;
+$tiny_lg: 1.48rem;
+
+// Font sizes
+// @group Design tokens
+$font-sizes: (
+  base:  'base',
+  h1:    'h1',
+  h2:    'h2',
+  h3:    'h3',
+  h4:    'h4',
+  h5:    'h5',
+  h6:    'h6',
+  small: 'small',
+  tiny: 'tiny',
+) !default;
+
+// Font families
+// @group Design tokens
+$fonts: (
+  narrow: "'Overpass', sans-serif",
+  wide: "'Source Sans Pro Web', sans-serif",
+  mono: "'Roboto Mono Web', Monaco, 'Courier New', Courier, monospace",
+  serif: "'Merriweather Web', Georgia, Cambria, Times New Roman, Times, serif",
+) !default;
+
+// Font weights
+// @group Design tokens
+$weights: (
+  light: 300,
+  regular: 400,
+  medium: 600,
+  bold: 700
+) !default;
+
+// Line length tokens to control the reading length of a line
+// @group Design tokens
+$measures: (
+  "0.5": 30ex,
+  "1": 44ex,
+  "2": 60ex,
+  "3": 64ex,
+  "4": 68ex,
+  "5": 72ex,
+  "6": 88ex,
+  "none": none
+) !default;
+
+// Line height tokens
+// @group Design tokens
+$line_heights: (
+  "1": 1,
+  "2": 1.15,
+  "3": 1.35,
+  "4": 1.5,
+  "5": 1.65,
+  "6": 1.75
+) !default;
+
+/*
+===========================================
+Colors
+===========================================
+*/
+// Colors
+// @group Design tokens
+$colors: (
+  // Gotta-haves
+  "transparent": transparent,
+  "white":    #fff,
+  "black":    #000,
+
+  // Grays
+  "gray-17":  #1d1d1d,
+  "gray-14":  #2c2c2c,
+  "gray-7":   #595959,
+  "gray-5":   #888,
+  "gray-3":   #aaa,
+  "gray-2":   #ddd,
+  "gray-1":   #eee,
+
+  // Blues
+  "blue-9":   #152e51,
+  "blue-7":   #004C61,
+  "blue-5":   #05627c,
+  "blue-3":   #008fb6, // #339bbe 
+  "blue-1":   #f3f7f8, // footer bg
+
+  // Reds
+  "red-9":    #710921,
+  "red-7":    #7e0521,
+  "red-5":    #b2022b,
+  "red-3":    #f04848,
+
+  // Greens
+  "green-7":  #003333,
+  "green-5":  #065e37,
+  "green-3":  #0ac374,
+  "green-1":  #5ce4a9,
+
+  // Yellows
+  "yellow":   #eec400,
+
+) !default;
+
+/*
+===========================================
+Base unit
+===========================================
+This grid is based on the 8pt grid which helps us
+ensure consistent horizontal and vertical rhythm.
+We are using pixels rather than relative units to ensure
+consistent spacing in the event that the root font size
+is not equal 10.
+More info: https://spec.fm/specifics/8-pt-grid
+*/
+
+// Base unit
+$base-unit: 8 !default;
+
+// Map for spacing tokens in Rems
+// @group Design tokens
+$units:(
+  "0":      0,
+  "1px":    calc((1) / 10),
+  "0.25":   calc(($base-unit * .25) / 10),
+  "0.5":    calc(($base-unit * .5) / 10),
+  "1":     calc(($base-unit * 1) / 10),
+  "1.5":   calc(($base-unit * 1.5) / 10),
+  "2":     calc(($base-unit * 2) / 10),
+  "2.5":   calc(($base-unit * 2.5) / 10),
+  "3":     calc(($base-unit * 3) / 10),
+  "4":     calc(($base-unit * 4) / 10),
+  "5":     calc(($base-unit * 5) / 10),
+  "6":     calc(($base-unit * 6) / 10),
+  "7":     calc(($base-unit * 7) / 10),
+  "8":     calc(($base-unit * 8) / 10),
+  "9":     calc(($base-unit * 9) / 10),
+  "10":    calc(($base-unit * 10) / 10),
+  "15":    calc(($base-unit * 15) / 10),
+  "20":    calc(($base-unit * 20) / 10),
+  "-1px":    calc((-1) / 10),
+  "-0.25":    calc(($base-unit * -.25) / 10),
+  "-0.5":     calc(($base-unit * -.5) / 10),
+  "-1":      calc(($base-unit * -1) / 10),
+  "-1.5":    calc(($base-unit * -1.5) / 10),
+  "-2":      calc(($base-unit * -2) / 10),
+  "-2.5":    calc(($base-unit * -2.5) / 10),
+  "-3":      calc(($base-unit * -3) / 10),
+  "-4":      calc(($base-unit * -4) / 10),
+  "-5":      calc(($base-unit * -5) / 10),
+  "-6":      calc(($base-unit * -6) / 10),
+  "-7":      calc(($base-unit * -7) / 10),
+  "-8":      calc(($base-unit * -8) / 10),
+  "-9":      calc(($base-unit * -9) / 10),
+  "-10":     calc(($base-unit * -10) / 10),
+  "-15":     calc(($base-unit * -15) / 10),
+  "-20":     calc(($base-unit * -20) / 10),
+) !default;
+
+/*
+===========================================
+Borders
+===========================================
+*/
+// Border radii
+// @group Design tokens
+$radii: (
+  0: 0,
+  xs: 1px,
+  sm: 2px,
+  md: 4px,
+  lg: 8px,
+  pill: 99rem,
+) !default;
+
+/*
+===========================================
+Transition speeds
+===========================================
+*/
+// Durations
+// @group Design tokens
+$durations: (
+  "1": 100ms,
+  "2": 200ms,
+  "3": 300ms,
+  "4": 400ms,
+  "5": 500ms,
+) !default;
+
+
+/*
+===========================================
+Z-indexes
+===========================================
+*/
+// Z-Index
+// @group Design tokens
+$z-indexes: (
+  "-1": -1,
+  "sticky-nav": 3000,
+  "overlay": 4000,
+  "flyout-menu": 5000,
+) !default;
+
+
+/* tandem */ 
+$swu-dark: #003333;
+$swu-dark-blue: #004C61;
+$swu-blue: #008fb6;
+$swu-green: #0ac374;
+$swu-bright-green: #0ac374;

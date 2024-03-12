@@ -1,0 +1,44 @@
+// Sets negative margins for a grid row, so we can use padding and keep things on the grid
+// 
+// @param {String} $gap [gap] - Gap, using our spacing units
+//
+// @example scss 
+//   .grid-row {
+//       @include grid-gap-row();
+//   }
+//
+// @example scss 
+//   .grid-row {
+//       @include grid-gap-row('5');
+//   }
+@mixin grid-gap-row(
+  $gap: $flex-column-gap,
+) {
+  $gap: if($gap == null, $flex-column-gap, $gap);
+
+  margin-left: units("-#{$gap}");
+  margin-right: units("-#{$gap}");
+}
+
+
+// Sets padding for column gap
+// 
+// @param {String} $gap [gap] - Gap, using our spacing units
+//
+// @example scss 
+//   .grid-col {
+//       @include grid-gap-col();
+//   }
+//
+// @example scss 
+//   .grid-col {
+//       @include grid-gap-col('5');
+//   }
+@mixin grid-gap-col(
+  $gap: $flex-column-gap,
+) {
+  $gap: if($gap == null, $flex-column-gap, $gap);
+
+  padding-left: units($gap);
+  padding-right: units($gap);
+}

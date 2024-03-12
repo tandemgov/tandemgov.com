@@ -1,0 +1,10 @@
+# annoying files
+.DS_Store
+
+# generated files
+dist
+node_modules
+_site
+
+# other files
+*.code-workspace

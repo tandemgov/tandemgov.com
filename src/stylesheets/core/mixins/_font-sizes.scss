@@ -1,0 +1,49 @@
+@use "../vars" as *;
+@use "fluid-type" as *;
+
+//
+// Sets font-size to a `calc` function between max and min sizes
+//
+// @group Typography
+// @param {String} $el - Element's font size
+//
+// @example scss 
+//   h1 {
+//       @include font-size('h1');
+//   }
+//
+@mixin font-size($el) {
+  @if $el == 'base' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $base_sm, $base_lg);
+  }
+  @else if $el == 'h1' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h1_sm, $h1_lg);
+  }
+  @else if $el == 'h2' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h2_sm, $h2_lg);
+  }
+  @else if $el == 'h3' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h3_sm, $h3_lg);
+  }
+  @else if $el == 'h4' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h4_sm, $h4_lg);
+  }
+  @else if $el == 'h5' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h5_sm, $h5_lg);
+  }
+  @else if $el == 'h6' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $h6_sm, $h6_lg);
+  }
+  @else if $el == 'small' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $small_sm, $small_lg);
+  }
+  @else if $el == 'tiny' {
+    @include interpolate(font-size, $fluid_min, $fluid_max, $tiny_sm, $tiny_lg);
+  }
+
+  @if not map-has-key($font-sizes, $el) {
+    @error '`#{$el}` is not a valid font size. '
+      + 'Valid font sizes: '
+      + '#{map-keys($font-sizes)}';
+  }
+}

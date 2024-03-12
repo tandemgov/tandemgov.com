@@ -1,0 +1,12 @@
+@use "uswds-core" with (
+    $theme-show-notifications: false,
+);
+@use "usa-layout-grid/src/styles/_usa-layout-grid.scss";
+@use "uswds-fonts/src/styles/_font-face.scss";
+@use "uswds-core/src/styles/tokens/font";
+
+/* core */
+@use "vars" as *;
+@use "mixins" as *;
+@use "functions" as *;
+@use "tokens" as *;

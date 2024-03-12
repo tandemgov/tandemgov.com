@@ -1,0 +1,23 @@
+@use "../core" as *;
+
+
+
+.wrapper {
+    @include wrapper;
+    margin: 0 auto 10rem;
+}
+
+.main-content {
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    padding: 3rem 0 12rem;
+    position: relative;
+    scroll-behavior: smooth;
+    transition: padding 0.25s linear;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 6rem;
+    }
+}

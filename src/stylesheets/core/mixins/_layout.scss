@@ -1,0 +1,11 @@
+
+@mixin wrapper() {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 2.5rem;
+    
+    @media (min-width:64em) {
+        min-height: 100%;
+    }
+    
+}

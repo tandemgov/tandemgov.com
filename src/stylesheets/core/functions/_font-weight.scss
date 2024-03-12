@@ -1,0 +1,23 @@
+// Font weight
+// 
+// @group Typography
+// @param {String} $weight - Font weight
+// 
+// @example scss 
+//   .foo {
+//       font-weight: weight('light');
+//   }
+//
+@use "../vars" as *;
+
+@function weight($weight) {
+
+  @if not map-has-key($weights, $weight) {
+    @error '`#{$weight}` is not a valid weight token. '
+      + 'Valid weight tokens: '
+      + '#{map-keys($weights)}';
+  }
+
+  $val: map-get($weights, $weight);
+  @return $val;
+}

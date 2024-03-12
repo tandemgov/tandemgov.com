@@ -1,0 +1,21 @@
+// Durations for animations
+// 
+// @param {String} $duration - Duration variable
+// 
+// @example scss 
+//   .foo {
+//       transition: all duration("1") linear;
+//   }
+// 
+
+@function duration($duration) {
+
+  @if not map-has-key($durations, $duration) {
+    @error '`#{$duration}` is not a valid duration. '
+      + 'Valid duration tokens: '
+      + '#{map-keys($durations)}';
+  }
+
+  $val: map-get($durations, $duration);
+  @return $val;
+}

@@ -1,0 +1,23 @@
+// Line height function for setting leadings
+// 
+// @group Typography
+// @param {String} $line_height - Uses the $line_height token
+// 
+// @example scss 
+//   .foo {
+//       line-height: line-height('1');
+//   }
+//
+@use "../vars" as *;
+
+@function line-height($line_height) {
+
+  @if not map-has-key($line_heights, $line_height) {
+    @error '`#{$line_height}` is not a valid line height token. '
+      + 'Valid line_height tokens: '
+      + '#{map-keys($line_heights)}';
+  }
+
+  $val: map-get($line_heights, $line_height);
+  @return $val;
+}

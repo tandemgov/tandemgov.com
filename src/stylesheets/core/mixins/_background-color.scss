@@ -1,0 +1,26 @@
+//
+// Background colors to support default and dark mode
+//
+// @param {String} $color Color
+// @param {String} $darkmode-color [null] Optional dark mode color
+//
+// @example scss 
+//   div {
+//       @include background-color($base-color);
+//   }
+//
+// @example scss 
+//   div {
+//       @include background-color($base-color, $base-color-dark);
+//   }
+//
+
+@mixin background-color($bgcolor, $darkmode-color: null) {
+  background-color: color($bgcolor);
+
+  @if $darkmode-color != null {
+    @media (prefers-color-scheme: dark) {
+      background-color: color($darkmode-color);
+    }
+  }
+}

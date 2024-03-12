@@ -1,0 +1,65 @@
+@use "../core"as *;
+
+.header {
+    background: color('blue-3');
+    border-bottom: 1px solid fade-out(white, 0.9);
+
+    &.sticky {
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 500;
+    }
+}
+
+.header__wrapper {
+    @include wrapper;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+    }
+}
+
+.nav-home-link {
+    align-items: center;
+    display: flex;
+    padding: 1rem 0;
+    text-decoration: none;
+
+    >* {
+        color: color('white');
+    }
+
+    svg {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    span {
+        font-family: font($body-font);
+        font-size: 3.5rem;
+        font-weight: 500;
+        height: 3.5rem;
+        letter-spacing: -0.05em;
+        line-height: 1.4;
+        margin: 0 0 0 0.25em;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem 0;
+
+        svg {
+            height: 5rem;
+            width: 5rem;
+        }
+
+        span {
+            font-size: 5rem;
+            height: 5rem;
+        }
+    }
+}
