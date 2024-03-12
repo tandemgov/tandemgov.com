@@ -14,7 +14,7 @@ button {
   appearance: none;
   background-color: color($button-background-color);
   border: units($button-border-width) solid color($button-border-color);
-  border-radius: radius($button-border-radius);
+  border-radius: 4px;
   color: color($button-label-color);
   cursor: pointer;
   display: inline-flex;
@@ -76,27 +76,6 @@ button {
   color: color($button-primary-label-color-active);
 }
 
-// Special buttons
-.button--special,
-.button--special:link,
-.button--special:visited {
-  background-color: color($button-special-background-color);
-  border-color: color($button-special-border-color);
-  color: color($button-special-label-color);
-}
-
-.button--special:hover {
-  background-color: color($button-special-background-color-hover);
-  border-color: color($button-special-border-color-hover);
-  color: color($button-special-label-color-hover);
-}
-
-.button--special:active {
-  background-color: color($button-special-background-color-active);
-  border-color: color($button-special-border-color-active);
-  color: color($button-special-label-color-active);
-}
-
 // External buttons
 .button--external,
 .button--external:link,
@@ -116,27 +95,6 @@ button {
   background-color: color($button-external-background-color-active);
   border-color: color($button-external-border-color-active);
   color: color($button-external-label-color-active);
-}
-
-// Danger buttons
-.button--danger,
-.button--danger:link,
-.button--danger:visited {
-  background-color: color($button-danger-background-color);
-  border-color: color($button-danger-border-color);
-  color: color($button-danger-label-color);
-}
-
-.button--danger:hover {
-  background-color: color($button-danger-background-color-hover);
-  border-color: color($button-danger-border-color-hover);
-  color: color($button-danger-label-color-hover);
-}
-
-.button--danger:active {
-  background-color: color($button-danger-background-color-active);
-  border-color: color($button-danger-border-color-active);
-  color: color($button-danger-label-color-active);
 }
 
 // Big buttons
@@ -172,33 +130,4 @@ button {
   margin: 0;
   padding: 0;
   text-decoration: underline;
-}
-
-.button-group {
-  display: flex;
-  .button {
-    height: 33px;
-    margin-left: 5px;
-  }
-}
-
-.button {
-  .icon-toggle {
-      margin: 0 5px;
-  }
-}
-
-.button {
-  span {
-    .sr {
-      display: none;
-      @media screen and (min-width: 768px) {
-        display: contents;
-      }
-    }
-  }
-}
-
-.usa-nav__link, .usa-nav-link {
-  font-size: initial;
 }

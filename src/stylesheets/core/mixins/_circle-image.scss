@@ -1,9 +1,0 @@
-// Make images round
-// @example scss 
-//   img.foo {
-//       @include circle-image;
-//   }
-@mixin circle-image {
-  border-radius: 50%;
-  overflow: hidden;
-}

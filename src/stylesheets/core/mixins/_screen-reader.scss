@@ -1,9 +1,0 @@
-// Makes content accessible to screenreaders, but hides visually
-// @example scss - Set rem font-size to `.foo`
-//   .foo {
-//       @include sr-only;
-//   }
-@mixin sr-only {
-  position: absolute;
-  left: -999em;
-}

@@ -12,15 +12,6 @@ html {
   overflow-x: hidden;
   padding: 0;
   scroll-behavior: smooth;
-
-  &.nav-open {
-    max-height: 100vh;
-    overflow: hidden;
-
-    // @include media('>=nav-width') {
-    //   overflow-y: visible;
-    // }
-  }
 }
 
 body {
@@ -33,14 +24,6 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
-  .nav-open & {
-    position: fixed;
-
-    // @include media('>=nav-width') {
-    //   position: static;
-    // }
-  }
 }
 
 ul > li::marker {
