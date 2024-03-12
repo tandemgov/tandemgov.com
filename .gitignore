@@ -3,7 +3,7 @@
 
 # generated files
 dist
-node_modules
+**/node_modules/**
 _site
 
 # other files
