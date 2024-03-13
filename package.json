@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "Jonathan \"Yoni\" Knoll",
+  "contributors": [
+    "Jonathan \"Yoni\" Knoll <yoni@tandemgov.com>",
+    "Dave Zvenyach <dave@tandemgov.com>"
+  ],
   "scripts": {
     "watch:sass": "sass --watch --load-path=node_modules/@uswds/uswds/packages --load-path=node_modules/include-media src/stylesheets:_site/assets/css",
     "build:sass": "sass --style=compressed --load-path=node_modules/@uswds/uswds/packages --load-path=node_modules/include-media src/stylesheets:_site/assets/css",
