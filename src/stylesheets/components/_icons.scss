@@ -5,3 +5,27 @@
     vertical-align: bottom;
     width: 1.5em;
 }
+.icon-green, .text-green {
+    color: color('green-3');
+}
+.icon-white, .text-white {
+    color: #fff;
+}
+.icon-black {
+    color: #222;
+}
+.icon-blue, .text-blue {
+    color: color('blue-3');
+}
+
+.icon-sm {
+    margin: -2px 3px 0 0;
+    height: 24px;
+    width: 24px;
+}
+
+.icon-lg {
+    height: 3rem;
+    width: 3rem;
+    margin: -2px 3px 0 0;
+}
