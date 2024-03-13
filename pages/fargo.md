@@ -2,10 +2,12 @@
 layout: layouts/base.njk
 title: Fargo
 slug: fargo
+seo_description: Fargo - a bot that loves federal procurement
 tags: footer
 permalink: /fargo.html
 footerLabel: Fargo
 sectionColor: white
+preview_image: TandemGov-Fargo-Preview.png
 ---
 <header class="content-header grid-row">
     <div class="grid-col-auto">
