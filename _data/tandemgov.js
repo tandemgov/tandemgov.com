@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 module.exports = {
-    HTTP_HOST: process.env.HTTP_HOST || "https://tandemgov.com",
+    HTTP_HOST: process.env.DEPLOY_URL || "https://tandemgov.com",
     site: "TandemGov",
     tagline: "Good government,<wbr>better partnerships",
     description: "TandemGov helps organizations navigate government contracting while leveraging their strengths.",
