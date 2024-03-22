@@ -1,8 +1,9 @@
 @use "../core"as *;
 
 .header {
-    background: color('blue-3');
-    border-bottom: 1px solid fade-out(white, 0.9);
+    border-top: 12px solid color('brand');
+    // background: color('blue-3');
+    // border-bottom: 1px solid fade-out(white, 0.9);
 
     &.sticky {
         left: 0;
@@ -31,7 +32,7 @@
     text-decoration: none;
 
     >* {
-        color: color('white');
+        color: color('green-5');
     }
 
     svg {

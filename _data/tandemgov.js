@@ -15,4 +15,59 @@ module.exports = {
         slug: "github",
         url: "https://github.com/tandemgov",
     }],
+    
+    services: [{
+        "name": "Proposal Support",
+        "items": [
+            "Proposal strategy development",
+            "Orals/Tech challenge coaching",
+            "Color reviews",
+            "Technical writing",
+            "Solution engineering",
+            // "Staffing strategy framework",
+        ],
+    // }, {
+    //     "name": "Contract Support",
+    //     "items": [
+    //         "Contract coaching",
+    //         "Compliance training",
+    //         "Partner identification & analysis",
+    //     ],
+    }, {
+        "name": "Opportunity Analysis",
+        "items": [
+            "Custom data analytics & research",
+            "Partner identification",
+            "Teaming strategies",
+            // "Introduction assistance* (mutual opt-in?)",
+            "Acquisition strategy training",
+        ],
+    }, {
+        "name": "Capture Management",
+        "items": [
+            "Landscape analysis",
+            "Past performance study",
+            // "Strategic review?",
+            "Solutions engineering",
+            // "Demo/Pitch support",
+            "Case study development",
+            // "Artifact curation & creation",
+        ],
+    // }, {
+    //     "name": "Sales & Business Development",
+    //     "items": [
+    //         "Process analysis & optimization",
+    //         "Tool development & documentation",
+    //         "Infrastructure analysis",
+    //         "Automation (development?)",
+    //         "Reporting (consultation, development, other?)",
+    //         "Artifact curation",
+    //     ],
+    // }, {
+    //     "name": "Marketing & Thought Leadership",
+    //     "items": [
+    //         "Whitepaper assistance",
+    //         "Blog post development",
+    //     ],
+    }],
 };

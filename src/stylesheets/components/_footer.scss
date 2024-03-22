@@ -33,9 +33,10 @@
     }
 }
 
-.footer-link {
+.footer-link, .footer-link:visited {
     border-radius: 4px;
     border: 2px solid transparent;
+    color: color('blue-7');
     display: block;
     font-size: $footer-font-size;
     font-weight: weight($footer-font-weight);

@@ -3,33 +3,34 @@
 .section {
     color: color($base-font-color);
     
-    h1, h2, h3 {
+    h1, h2, h3, h4 {
         margin-top: 1em;
     }
+    
 }
 
 .section--white {
-    background: white;
     color: color($base-font-color);
 }
 
 .section--blue {
-    background: color('blue-3');
+    background: color('blue-7');
     color: white;
-}
-
-.section__header {
-    padding: 2rem;
-    h2, h3 {
-        @include font-size('h1');
-        font-weight: 700;
+    
+    li::marker {
+        color: inherit;
     }
 }
 
-.section__body {
-    padding: 0 2rem 4rem;
-    h3 {
-        @include font-size('h4');
-        font-weight: 600;
+.section--green {
+    background: color('green-7');
+    color: white;
+
+    li::marker {
+        color: inherit;
     }
+}
+
+.section--padded {
+    padding: 4rem 0;
 }

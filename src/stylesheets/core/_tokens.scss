@@ -4,6 +4,8 @@ GENERAL SETTINGS
 ----------------------------------------
 */
 
+$brand-font: "brand";
+
 // General Typography
 $body-background-color: "white";
 $body-font: "narrow";
@@ -32,10 +34,10 @@ $heading-font-weight: "medium";
 $heading-line-height: "2";
 
 // Footer
-$footer-background-color: "blue-1";
-$footer-text-color: "white";
-$footer-link-color: "white";
-$footer-link-underline-color: "white";
+$footer-background-color: "white";
+$footer-text-color: "brand";
+$footer-link-color: "brand";
+$footer-link-underline-color: "brand";
 $footer-link-underline-thickness: 1px;
 $footer-link-decoration-line-hover: none;
 $footer-height: 5.5rem;
@@ -105,18 +107,18 @@ $button-primary-background-color-active: "blue-7";
 $button-primary-border-color-active: "blue-7";
 $button-primary-label-color-active: "white";
 
-// External buttons
-$button-external-background-color: "blue-9";
-$button-external-border-color: "blue-9";
-$button-external-label-color: "white";
+// Accent buttons
+$button-accent-background-color: "green-5";
+$button-accent-border-color: "green-5";
+$button-accent-label-color: "white";
 
-$button-external-background-color-hover: "blue-7";
-$button-external-border-color-hover: "blue-1";
-$button-external-label-color-hover: "white";
+$button-accent-background-color-hover: "green-7";
+$button-accent-border-color-hover: "green-7";
+$button-accent-label-color-hover: "white";
 
-$button-external-background-color-active: "blue-7";
-$button-external-border-color-active: "blue-1";
-$button-external-label-color-active: "white";
+$button-accent-background-color-active: "green-7";
+$button-accent-border-color-active: "green-7";
+$button-accent-label-color-active: "white";
 
 // Small buttons
 $button-small-font-size: "small";
@@ -124,9 +126,9 @@ $button-small-padding-x: "1.5";
 $button-small-padding-y: "0.25";
 
 // Big buttons
-$button-big-font-size: "h5";
-$button-big-padding-x: "4";
-$button-big-padding-y: "1";
+$button-big-font-size: "h6";
+$button-big-padding-x: "2";
+$button-big-padding-y: "1.5";
 
 // Disabled buttons
 $button-background-color-disabled: "gray-5";

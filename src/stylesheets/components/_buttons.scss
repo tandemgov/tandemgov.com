@@ -76,25 +76,25 @@ button {
   color: color($button-primary-label-color-active);
 }
 
-// External buttons
-.button--external,
-.button--external:link,
-.button--external:visited {
-  background-color: color($button-external-background-color);
-  border-color: color($button-external-border-color);
-  color: color($button-external-label-color);
+// Accent buttons
+.button--accent,
+.button--accent:link,
+.button--accent:visited {
+  background-color: color($button-accent-background-color);
+  border-color: color($button-accent-border-color);
+  color: color($button-accent-label-color);
 }
 
-.button--external:hover {
-  background-color: color($button-external-background-color-hover);
-  border-color: color($button-external-border-color-hover);
-  color: color($button-external-label-color-hover);
+.button--accent:hover {
+  background-color: color($button-accent-background-color-hover);
+  border-color: color($button-accent-border-color-hover);
+  color: color($button-accent-label-color-hover);
 }
 
-.button--external:active {
-  background-color: color($button-external-background-color-active);
-  border-color: color($button-external-border-color-active);
-  color: color($button-external-label-color-active);
+.button--accent:active {
+  background-color: color($button-accent-background-color-active);
+  border-color: color($button-accent-border-color-active);
+  color: color($button-accent-label-color-active);
 }
 
 // Big buttons
