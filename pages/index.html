@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: TandemGov – Good government, better partnerships
+seo_title: TandemGov – Good government, better partnerships
+seo_description: TandemGov helps organizations navigate government contracting while leveraging their strengths.
+permalink: /
+slug: home
+sectionColor: blue
+---
+{% section "white", "section--padded" %}
+<h1>Good government,<br>better partnerships</h1>
+<p>We help organizations navigate government contracting while leveraging their strengths.</p>
+<p>If you want expert support for your government contracting efforts, let's talk!</p>
+<h4><a class="button button--primary button--big" data-savvycal-embed="" data-umami-event="Meeting schedule pop-up triggered" href="https://savvycal.com/tandemgov/hello" target="_blank">Schedule time to chat</a></h4>
+{% endsection %}
+
+{% section "blue", "section--padded" %}
+    <div class="grid-row">
+        {% for category in tandemgov.services %}
+        <div class="grid-col-12 desktop:grid-col-4">
+            <h4>{{ category.name }}</h4>
+            <ul>
+                {% for service in category.items %}
+                    <li>{{ service }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+{% endsection%}

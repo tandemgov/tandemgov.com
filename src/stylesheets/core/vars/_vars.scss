@@ -81,11 +81,15 @@ $font-sizes: (
   tiny: 'tiny',
 ) !default;
 
+
 // Font families
 // @group Design tokens
 $fonts: (
-  narrow: "'Overpass', sans-serif",
-  wide: "'Source Sans Pro Web', sans-serif",
+  brand: "Colfax, sans-serif",
+  // narrow: "'Overpass', sans-serif",
+  // wide: "'Source Sans Pro Web', sans-serif",
+  narrow: "Colfax, 'Public Sans', sans-serif",
+  wide: "'Public Sans', sans-serif",
   mono: "'Roboto Mono Web', Monaco, 'Courier New', Courier, monospace",
   serif: "'Merriweather Web', Georgia, Cambria, Times New Roman, Times, serif",
 ) !default;
@@ -95,7 +99,7 @@ $fonts: (
 $weights: (
   light: 300,
   regular: 400,
-  medium: 600,
+  medium: 500,
   bold: 700
 ) !default;
 
@@ -130,11 +134,16 @@ Colors
 */
 // Colors
 // @group Design tokens
+$brand-blue: #048AD1;
+$brand-green: #03B068;
+
 $colors: (
   // Gotta-haves
   "transparent": transparent,
   "white":    #fff,
   "black":    #000,
+  
+  "brand":    $brand-blue,
 
   // Grays
   "gray-17":  #1d1d1d,
@@ -146,11 +155,12 @@ $colors: (
   "gray-1":   #eee,
 
   // Blues
-  "blue-9":   #152e51,
-  "blue-7":   #004C61,
-  "blue-5":   #05627c,
-  "blue-3":   #008fb6, // #339bbe 
-  "blue-1":   #f3f7f8, // footer bg
+  "blue-9":   #152E51,
+  "blue-7":   #015FA3, // adjust-color($brand-blue, $red: -3, $green: -43, $blue: -46),
+  "blue-6":   #05627c, // off
+  "blue-5":   $brand-blue,
+  "blue-3":   #07BFFF, // adjust-color($brand-blue, $red: +3, $green: +43, $blue: +46)
+  "blue-1":   #A5DFFD,
 
   // Reds
   "red-9":    #710921,
@@ -159,10 +169,11 @@ $colors: (
   "red-3":    #f04848,
 
   // Greens
-  "green-7":  #003333,
-  "green-5":  #065e37,
-  "green-3":  #0ac374,
-  "green-1":  #5ce4a9,
+  "green-7": #00853A, // adjust-color($brand-green, $red: -3, $green: -43, $blue: -46),
+  "green-6":  #065E37, // off
+  "green-5":  $brand-green,
+  "green-3":  #06DB96, // adjust-color($brand-green, $red: +3, $green: +43, $blue: +46),
+  "green-1": #82FDCA,
 
   // Yellows
   "yellow":   #eec400,

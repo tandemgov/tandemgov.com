@@ -31,8 +31,10 @@ date: Last Modified
     <meta property="og:url" content="{{ tandemgov.HTTP_HOST }}{{ permalink }}">
     <meta name="og:pubdate" content="{{ page.date.toUTCString() }}">
     <meta property="og:pubdate" content="{{ page.date.toUTCString() }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    {# <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> #}
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ tandemgov.HTTP_HOST }}/assets/css/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ tandemgov.HTTP_HOST }}/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ tandemgov.HTTP_HOST }}/assets/favicons/favicon-32x32.png">
@@ -41,25 +43,21 @@ date: Last Modified
     <link rel="mask-icon" href="{{ tandemgov.HTTP_HOST }}/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
   </head>
   <body class="{{ slug }} {{ pageClass }}">
+  <div class="cover">
       <header id="main-header" class="header">
         <div class="header__wrapper">
             <div class="site-logo" id="logo">
                 <a href="/" title="TandemGov" class="nav-home-link">
-                    {% icon "logo-white", "nav-logo", "fill", "symbol" %}
+                    {% icon "logo-white", "text-green nav-logo", "fill", "symbol" %}
                     <span>TandemGov</span>
                 </a>
             </div>
         </div>
       </header>
         <main id="main-content" class="main-content" role="main">
-        <div class="wrapper">
-            <section class="section section--{{ sectionColor }}">
-                {{ content | safe }}
-            </section>
-        </div>
+            {{ content | safe }}
         </main>
       <footer id="main-footer" class="footer">
           <div class="footer__wrapper">
@@ -87,7 +85,6 @@ date: Last Modified
                               </a>
                           </li>
                           {% endfor %}
-
                           <li class="grid-col-auto">
                               <a class="footer-link footer-link--govcontractually" href="https://www.linkedin.com/newsletters/govcontractually-7084512252426387457/" title="GovContrActually" target="_blank">
                                   <svg class="svg svg-gca" viewBox="0 0 602 51" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,6 +100,6 @@ date: Last Modified
               </div>
           </div>
       </footer>
-
+      </div>
   </body>
 </html>

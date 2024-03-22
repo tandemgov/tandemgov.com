@@ -16,7 +16,8 @@ html {
 
 body {
   @include m.font-size('base');
-  background-color: f.color($body-background-color);
+  // background-color: f.color($body-background-color);
+  background: white;
   color: f.color($base-font-color);
   font-family: f.font($body-font);
   font-weight: f.weight($body-font-weight);
@@ -31,17 +32,19 @@ ul > li::marker {
 }
 
 h1 {
-  @include m.font-size('h1')
+  @include m.font-size('h1');
 }
 
 p {
   margin-bottom: 1.804rem;
   line-height: 1.5;
-  font-size: 1.7rem;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
 li {
-  font-size: 1.7rem;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
 menu {
