@@ -15,16 +15,21 @@ sectionColor: blue
 {% endsection %}
 
 {% section "blue", "section--padded" %}
-    <div class="grid-row">
+    <div class="grid-row grid-gap">
         {% for category in tandemgov.services %}
+        {% if category.display %}
         <div class="grid-col-12 desktop:grid-col-4">
             <h4>{{ category.name }}</h4>
+            {% comment %}
             <ul>
                 {% for service in category.items %}
                     <li>{{ service }}</li>
                 {% endfor %}
             </ul>
+            {% endcomment %}
+            <p>{{ category.description }}</p>
         </div>
+        {% endif %}
         {% endfor %}
     </div>
 {% endsection%}
