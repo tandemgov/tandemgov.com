@@ -19,6 +19,7 @@ module.exports = {
     services: [{
         "name": "Proposal Support",
         "display": true,
+        "icon": "document",
         "items": [
             "Proposal strategy development",
             "Orals/Tech challenge coaching",
@@ -27,19 +28,21 @@ module.exports = {
             "Solution engineering",
             "Staffing strategy framework",
         ],
-        "description": "Enhance your proposals with our strategic expertise, covering everything from strategy development and technical writing to comprehensive reviews and solution engineering. We provide tailored coaching for orals and technical challenges, ensuring your team is fully prepared and your staffing strategy is robust and effective.",
+        "description": "Our team offers a comprehensive suite of services, from developing proposal strategies and technical writing to conducting thorough reviews and crafting solution engineering. We're equipped to provide coaching for oral presentations and technical challenges, ensuring a well-prepared team and a solid staffing approach.",
     }, {
         "name": "Contract Support",
         "display": true,
+        "icon": "building",
         "items": [
             "Contract coaching",
             "Compliance training",
             "Partner identification & analysis",
         ],
-        "description": "Streamline your contract management with our focused services, including personalized coaching to navigate complex contract scenarios, comprehensive compliance training to ensure adherence to regulations, and expert partner identification and analysis to build strong, strategic alliances. Our approach is designed to optimize your contract handling for maximum efficiency and success.",
+        "description": "Our services are tailored to streamline contract management, encompassing contract coaching, compliance training, and partner identification and analysis. This integrated approach is crafted to enhance efficiency in handling contracts and to foster strategic partnerships, ensuring successful outcomes.",
     }, {
         "name": "Opportunity Analysis",
         "display": true,
+        "icon": "search-document",
         "items": [
             "Custom data analytics & research",
             "Partner identification",
@@ -47,10 +50,11 @@ module.exports = {
             "Introduction assistance* (mutual opt-in?)",
             "Acquisition strategy training",
         ],
-        "description": "Our service delves deep into custom data analytics and research to identify lucrative opportunities and potential partners, while also advising on effective teaming strategies. We also offer acquisition strategy training and facilitate introductions, ensuring a mutual opt-in for strong, collaborative relationships. This comprehensive approach equips you with the insights and strategies needed to capture the right opportunities.",
+        "description": "Our team specializes in custom data analytics and research, identifying potential opportunities and partners. We focus on developing teaming strategies and acquisition training, and assist in facilitating well-matched introductions. This approach is aimed at effectively pinpointing and securing valuable opportunities.",
     }, {
         "name": "Capture Management",
         "display": true,
+        "icon": "chess",
         "items": [
             "Landscape analysis",
             "Past performance study",
@@ -60,10 +64,11 @@ module.exports = {
             "Case study development",
             "Artifact curation & creation",
         ],
-        "description": "Elevate your bid strategy with our services, ranging from in-depth landscape analysis and past performance studies to strategic reviews and tailored solutions engineering. We support your demos and pitches, develop compelling case studies, and assist in the curation and creation of key artifacts, ensuring you have a robust and well-crafted approach for winning bids.",
+        "description": "Our expertise includes landscape analysis, past performance evaluation, strategic reviews, and custom solutions engineering. We aid in preparing demos and pitches, developing case studies, and managing artifacts, all aimed at crafting a strong, effective bid strategy.",
     }, {
-        "name": "Sales & Business Development",
+        "name": "Business Development",
         "display": true,
+        "icon": "rising-graph",
         "items": [
             "Process analysis & optimization",
             "Tool development & documentation",
@@ -72,14 +77,15 @@ module.exports = {
             "Reporting (consultation, development, other?)",
             "Artifact curation",
         ],
-        "description": "Streamline your sales processes with our targeted approach, including process analysis, tool development, and effective automation. We also offer comprehensive support in infrastructure analysis, reporting, and artifact curation, ensuring your sales strategy is both efficient and impactful.",
+        "description": "We streamline sales processes with custom AI-driven tools for pipeline development, complemented by targeted process analysis, automation, and infrastructure insights. Our focused approach aims to enhance your sales strategy's efficiency and effectiveness.",
     }, {
-        "name": "Marketing & Thought Leadership",
+        "name": "Thought Leadership",
+        "icon": "megaphone",
         "display": true,
         "items": [
             "Whitepaper assistance",
             "Blog post development",
         ],
-        "description": "Enhance your brand's visibility and authority with our services. We assist in crafting insightful whitepapers and engaging blog posts, amplifying your thought leadership. Additionally, we guide your participation in speaker events and panel discussions, positioning you as an industry leader.",
+        "description": "We offer support in producing whitepapers and thought leadership pieces, aiming to enhance the visibility of government vendors among important industry contacts. This is part of our broader effort to assist clients in establishing themselves as informed voices in their sector.",
     }],
 };

@@ -71,3 +71,24 @@
 .fargo-header {
     font-family: font("mono");
 }
+
+.category {
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    p {
+        max-width: 80%;
+        padding-right: 2rem;
+    }
+}
+.category-icon {
+    margin-right: 8px;
+}
+.category-svg {
+    height: 2em;
+    width: 2em;
+}
+.category-name {
+}
