@@ -87,9 +87,16 @@
     }
 }
 .category-icon {
-    margin-right: 8px;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    color: color('green-7');
+    display: flex;
+    justify-content: center;
+    margin-right: 0.5em;
+    padding: 0.5em;
 }
 .category-svg {
-    height: 2em;
-    width: 2em;
+    height: 40px;
+    width: 40px;
 }

@@ -80,7 +80,7 @@ module.exports = {
         "description": "We streamline sales processes with custom AI-driven tools for pipeline development, complemented by targeted process analysis, automation, and infrastructure insights. Our focused approach aims to enhance your sales strategy's efficiency and effectiveness.",
     }, {
         "name": "Thought Leadership",
-        "icon": "megaphone",
+        "icon": "cognition",
         "display": true,
         "items": [
             "Whitepaper assistance",
